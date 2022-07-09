@@ -1,0 +1,34 @@
+<div class="flex flex-wrap">
+    <div class="w-1/3">
+        <div class="w-full flex justify-start">
+            {{#if prev}}
+                <a
+                    href="{{page_url prev}}"
+                    class="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-slate-900 text-white hover:bg-slate-700 lg:mt-0 w-full lg:w-auto"
+                >
+                    {{t "Previous"}}
+                </a>
+            {{/if}}
+        </div>
+    </div>
+    <div class="w-1/3">
+        <div class="w-full flex justify-center">
+            <span class="border px-2 py-1 rounded-3xl text-blueGray-500">
+                {{t "Page {page} of {pages}" page=page pages=pages}}
+            </span>
+        </div>
+    </div>
+    <div class="w-1/3">
+        <div class="w-full flex justify-end">
+            {{#if next}}
+                <a
+                    href="{{page_url next}}"
+                    class="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-slate-900 text-white hover:bg-slate-700 lg:mt-0 w-full lg:w-auto"
+                >
+                    {{t "Next"}}
+                </a>
+            {{/if}}
+        </div>
+    </div>
+
+</div>

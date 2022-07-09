@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}" class="font-{{@custom.body_font}}">
+    <head>
+        <title>{{meta_title}}</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/14bce63469.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="{{asset "built/main.css"}}" />
+
+        {{ghost_head}}
+    </head>
+    <body class="{{body_class}}" style="{{#block "body_style"}}{{/block}}">
+        {{#if @custom.show_comment}}
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0&appId=565725631806712&autoLogAppEvents=1" nonce="uaponYdz"></script>
+        {{/if}}
+        {{> header}}
+        {{{body}}}
+        {{> footer}}
+        {{> spotify}}
+        <script type="text/javascript" src="{{asset "built/main.js"}}"></script>
+        {{ghost_foot}}
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<article class="relative pt-10">
+    <div class="mb-2">
+        <a href="{{url}}">
+            {{#if feature_image}}
+                <img src="{{img_url feature_image size="xl"}}" class="w-full rounded-xl" alt="" />
+            {{else}}
+                <img src="//via.placeholder.com/750x400" class="w-full rounded-xl" alt="" />
+            {{/if}}
+        </a>
+    </div>
+    <a href="{{url}}" class="text-blueGray-500 hover:text-blueGray-700">
+        <h2 class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 md:text-3xl">
+            {{title}}
+        </h2>
+    </a>
+    <div class="text-sm leading-6">
+        <span>
+            <time dateTime="{{date}}">
+                <small>{{date}}</small>
+            </time>
+        </span>
+    </div>
+    <div class="mt-4 mb-4 prose prose-slate dark:prose-dark max-w-full">
+        {{#if excerpt}}
+            <div class="post-card-excerpt">{{excerpt}}</div>
+        {{/if}}
+        <a class="text-cyan-500 hover:text-cyan-700" href="{{url}}">
+            {{t "Read more"}}
+        </a>
+    </div>
+
+</article>

@@ -1,0 +1,26 @@
+{{!< default}}
+
+<div class="w-full h-screen bg-cover" style="background-image: url('{{#if @custom.use_custom_cover}}{{img_url @site.cover}}{{else}}{{asset 'img/background-1.jpeg'}}{{/if}}')">
+    <div class="container mx-auto">
+        <h1 class="text-6xl font-bold text-center pt-16 text-white">{{@site.title}}</h1>
+        <p class="text-white text-2xl text-center mt-4">{{@site.description}}</p>
+        <div class="flex justify-center mt-16">
+            <div class="bg-cover border-8 border-rose-400 rounded-full w-52 h-52 overflow-hidden" style="background-image: url('{{#if @custom.avatar_image}}{{img_url @custom.avatar_image}}{{else}}{{asset 'img/avatar.jpeg'}}{{/if}}'); background-radius: 50% 50% 50%; background-position: 50% 50%;">
+            </div>
+        </div>
+        <div class="my-12 w-full text-center">
+            <a href="https://www.facebook.com/Oryc9x" target="_blank" rel="noopener nofollow">
+                <i class="text-white text-3xl leading-lg fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="ml-6" href="https://www.instagram.com/orycdung" target="_blank" rel="noopener nofollow">
+                <i class="text-white text-3xl leading-lg fa-brands fa-instagram"></i>
+            </a>
+            <a class="ml-6" href="https://www.linkedin.com/in/kevinpham93/" target="_blank" rel="noopener nofollow">
+                <i class="text-white text-3xl leading-lg fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="ml-6" href="mailto:oryc9x@gmail.com" target="_blank" rel="noopener nofollow">
+                <i class="text-white text-3xl leading-lg fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kg-width-wide {
+    
+}
+
+.kg-width-full {
+
+}
