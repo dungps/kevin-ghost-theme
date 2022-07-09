@@ -90,7 +90,14 @@ function zipper(done) {
                 "!settings/routes.yaml",
                 "!scripts",
                 "!scripts/generate_class.js",
-                "!scripts/classes.js"
+                "!scripts/classes.js",
+                "!docs",
+                "!docs/img",
+                "!docs/comment.md",
+                "!docs/sharethis.md",
+                "!docs/img/sharethis-1.png",
+                "!docs/img/sharethis-2.png",
+                "!docs/img/sharethis-3.png"
             ]),
             zip(filename),
             dest("dist/")
