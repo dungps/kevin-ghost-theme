@@ -97,7 +97,9 @@ function zipper(done) {
                 "!docs/sharethis.md",
                 "!docs/img/sharethis-1.png",
                 "!docs/img/sharethis-2.png",
-                "!docs/img/sharethis-3.png"
+                "!docs/img/sharethis-3.png",
+                "!assets/img/screenshot-desktop.png",
+                "!assets/img/background.jpeg"
             ]),
             zip(filename),
             dest("dist/")
