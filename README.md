@@ -2,7 +2,7 @@
 
 This is the theme for Ghost using at [https://www.dungps.com](https://www.dungps.com)
 
-![screenshot-desktop](assets/img/screenshot-desktop.jpeg)
+![screenshot-desktop](assets/img/screenshot-desktop.png)
 
 # Installation
 
