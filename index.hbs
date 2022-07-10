@@ -9,18 +9,31 @@
             </div>
         </div>
         <div class="my-12 w-full text-center">
-            <a href="https://www.facebook.com/Oryc9x" target="_blank" rel="noopener nofollow">
+            {{#if @site.facebook}}
+            <a href="{{@site.facebook}}" target="_blank" rel="noopener nofollow">
                 <i class="text-white text-3xl leading-lg fa-brands fa-facebook-f"></i>
             </a>
-            <a class="ml-6" href="https://www.instagram.com/orycdung" target="_blank" rel="noopener nofollow">
+            {{/if}}
+            {{#if @site.twitter}}
+            <a class="ml-6" href="{{@site.twitter}}" target="_blank" rel="noopener nonofollow">
+                <i class="text-white text-3xl leading-lg fa-brands fa-twitter"></i>
+            </a>
+            {{/if}}
+            {{#if @custom.instagram}}
+            <a class="ml-6" href="{{@custom.instagram}}" target="_blank" rel="noopener nofollow">
                 <i class="text-white text-3xl leading-lg fa-brands fa-instagram"></i>
             </a>
-            <a class="ml-6" href="https://www.linkedin.com/in/kevinpham93/" target="_blank" rel="noopener nofollow">
+            {{/if}}
+            {{#if @custom.linkedin}}
+            <a class="ml-6" href="{{@custom.linkedin}}" target="_blank" rel="noopener nofollow">
                 <i class="text-white text-3xl leading-lg fa-brands fa-linkedin-in"></i>
             </a>
-            <a class="ml-6" href="mailto:oryc9x@gmail.com" target="_blank" rel="noopener nofollow">
+            {{/if}}
+            {{#if @custom.email}}
+            <a class="ml-6" href="mailto:{{@custom.email}}" target="_blank" rel="noopener nonofollow">
                 <i class="text-white text-3xl leading-lg fa-solid fa-envelope"></i>
             </a>
+            {{/if}}
         </div>
     </div>
 </div>
