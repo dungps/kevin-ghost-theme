@@ -1,28 +1,13 @@
 routes:
   /:
-    template: index
+    template: home
     data: page.home
 
 collections:
   /blog/:
     permalink: /blog/{slug}/
-    template: blog
-    filter: primary_tag:blog
-    data: tag.blog
-  /poem/:
-    permalink: /poem/{slug}/
-    template: blog
-    filter: primary_tag:poem
-    data: tag.poem
-  /podcasts/:
-    permalink: /podcasts/{slug}/
-    template: blog
-    filter: primary_tag:podcasts
-    data: tag.podcasts
-  /review/:
-    permalink: /review/{review}/
-    template: blog
-    filter: primary_tag:review
-    data: tag.review
+    template: index
 
 taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

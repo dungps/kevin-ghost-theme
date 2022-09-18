@@ -20,6 +20,15 @@
             {{/if}}
             <div class="mt-12 prose prose-slate dark:prose-dark max-w-full">
                 {{content}}
+                {{#if tags}}
+                    {{#foreach tags}}
+                        <a href="{{url}}" class="no-underline">
+                            <span class="bg-gray-100 text-gray-800 text-l font-semibold mr-2 px-2.5 py-0.5 rounded">
+                                {{name}}
+                            </span>
+                        </a>
+                    {{/foreach}}
+                {{/if}}
             </div>
             {{#if @custom.show_share}}
                 <div class="border-y border-black my-4 py-4">
