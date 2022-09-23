@@ -35,9 +35,7 @@
                     <div class="sharethis-inline-share-buttons"></div>
                 </div>
             {{/if}}
-            {{#if @custom.show_comment}}
-                <div class="fb-comments" data-href="{{@site.url}}{{url}}" data-width="100%" data-numposts="5"></div>
-            {{/if}}
+            {{comments}}
         </div>
     </div>
 {{/post}}
