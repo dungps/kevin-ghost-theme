@@ -1,6 +1,6 @@
 {{!< default}}
 
-<div class="w-full h-screen bg-cover" style="background-image: url('{{#if @custom.use_custom_cover}}{{img_url @site.cover}}{{else}}{{asset 'img/background-1.jpeg'}}{{/if}}')">
+<div class="w-full h-screen bg-cover" style="background-image: url('{{#if @custom.use_custom_cover}}{{img_url @site.cover_image}}{{else}}{{asset 'img/background-1.jpeg'}}{{/if}}')">
     <div class="container mx-auto">
         <h1 class="text-6xl font-bold text-center pt-16 text-white">{{@site.title}}</h1>
         <p class="text-white text-2xl text-center mt-4">{{@site.description}}</p>
